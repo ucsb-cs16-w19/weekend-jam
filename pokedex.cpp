@@ -49,7 +49,8 @@ int main() {
     my_dex->last = NULL;
 
     my_dex->first = &pkmn1;
-    my_dex->last = &pkmn1;
+    my_dex->last = &pkmn2;
+    (my_dex->first)->link = my_dex->last;
 
     print_dex(my_dex);
     return 0;
